@@ -17,7 +17,7 @@ This is a skeleton for a backend web application using Express.js. It is intende
 
 1. Change into the directory
 
-    ``bash
+    ```bash
     cd <directory-name>
     # Example: cd my-app-backend
     ```
