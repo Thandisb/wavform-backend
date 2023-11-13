@@ -1,28 +1,28 @@
 \c lessons;
 
 INSERT INTO 
-    lessons(id, name) 
+    lessons(name) 
 VALUES
-    (1, 'Notes'),
-    (2, 'Rhythm');
+    ('Notes'),
+    ('Rhythm');
 
 
 INSERT INTO 
-    topics(id, name, description, lesson_id) 
+    topics(lesson_id, name, description, lesson_id) 
 VALUES
-    (1, 'Octaves','The octave is a fundamental musical interval that spans eight diatonic notes or twelve semitones.', 1),
+    (1, 'Octaves','The octave is a fundamental musical interval that spans eight diatonic notes or twelve semitones.'),
 
-    (2, 'Notes on the Piano','The piano utilizes 88 keys spanning over seven octaves, each key corresponding to a specific musical pitch.', 1),
+    (1, 'Notes on the Piano','The piano utilizes 88 keys spanning over seven octaves, each key corresponding to a specific musical pitch.'),
 
-    (3, 'Intervals','An interval in music refers to the distance between two pitches.', 1),
+    (1, 'Intervals','An interval in music refers to the distance between two pitches.'),
 
-    (4, 'Chords','Chords are formed by playing three or more notes together.', 1),
+    (1, 'Chords','Chords are formed by playing three or more notes together.'),
 
-    (5, 'Bars','The bar is the basic unit of time in music. It defines the periodic division of rhythm', 2),
+    (2, 'Bars','The bar is the basic unit of time in music. It defines the periodic division of rhythm'),
 
-    (6, 'Types of Notes','Notes represent different durations of sounds.', 2),
+    (2, 'Types of Notes','Notes represent different durations of sounds.'),
 
-    (7, 'Tempo','Tempo is how many beats per minute are being played, so how fast the song is.', 2);
+    (2, 'Tempo','Tempo is how many beats per minute are being played, so how fast the song is.');
 
 
 -- INSERT INTO 

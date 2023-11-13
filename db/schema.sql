@@ -6,8 +6,9 @@ CREATE DATABASE lessons;
 
 CREATE TABLE lessons (
     l_id SERIAL PRIMARY KEY,
-    l_name VARCHAR(30)    
+    name VARCHAR(30)    
 );
+
 
 DROP TABLE IF EXISTS topics;
 
@@ -15,8 +16,7 @@ CREATE TABLE topics (
   to_id INT PRIMARY KEY,
   to_name VARCHAR(30),
   to_description TEXT,
-  to_lesson INT,
-  FOREIGN KEY (to_lesson) REFERENCES lessons(l_id)
+  lessons_id INTEGER REFERENCES lessons(l_id)
 );
 
 -- CREATE TABLE trivia (
