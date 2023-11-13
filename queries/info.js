@@ -10,4 +10,14 @@ const getAllLessons = async () => {
   }
 };
 
-module.exports = { getAllLessons };
+const getSingleLesson = async (id) => {
+  try {
+    const lesson = await db.any("select * from lessons where id = $1", id);
+
+    return lesson;
+  } catch (error) {
+    return error;
+  }
+};
+
+module.exports = { getAllLessons, getSingleLesson };
