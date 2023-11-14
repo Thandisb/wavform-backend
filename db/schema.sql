@@ -13,9 +13,9 @@ CREATE TABLE lessons (
 DROP TABLE IF EXISTS topics;
 
 CREATE TABLE topics (
-  to_id INT PRIMARY KEY,
-  to_name VARCHAR(30),
-  to_description TEXT,
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(30),
+  description TEXT,
   lessons_id INTEGER REFERENCES lessons(l_id)
 );
 

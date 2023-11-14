@@ -8,7 +8,7 @@ VALUES
 
 
 INSERT INTO 
-    topics(lesson_id, name, description, lesson_id) 
+    topics(lessons_id, name, description) 
 VALUES
     (1, 'Octaves','The octave is a fundamental musical interval that spans eight diatonic notes or twelve semitones.'),
 
