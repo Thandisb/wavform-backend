@@ -31,7 +31,7 @@ router.get("/topic/:id", async (req, res) => {
   if (topic.length === 0) {
     res.status(404).json({ error: "error!" });
   } else {
-    res.json(topic);
+    res.json(topic[0]);
   }
 });
 
