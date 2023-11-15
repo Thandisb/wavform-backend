@@ -5,7 +5,7 @@ CREATE DATABASE lessons;
 \c lessons;
 
 CREATE TABLE lessons (
-    l_id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     name VARCHAR(30)    
 );
 
@@ -16,7 +16,7 @@ CREATE TABLE topics (
   id SERIAL PRIMARY KEY,
   name VARCHAR(30),
   description TEXT,
-  lessons_id INTEGER REFERENCES lessons(l_id)
+  lessons_id INTEGER REFERENCES lessons(id)
 );
 
 -- CREATE TABLE trivia (
