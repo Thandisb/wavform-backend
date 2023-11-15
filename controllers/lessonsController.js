@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
+// const topicsController = require("./topicsController");
+
+// router.use("/:lessonsId/topics", topicsController);
+
 const { getAllLessons, getSingleLesson } = require("../queries/info");
 
 router.get("/", async (req, res) => {
