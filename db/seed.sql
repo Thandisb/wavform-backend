@@ -1,10 +1,18 @@
-\c lessons;
+\c wavform_dev;
+
+INSERT INTO 
+    users(username, password, email)
+VALUES
+    ('stormLord', 'password321', 'wave1@hotmail.com'),
+    ('boogieWOnderland', 'earthwindandfire', 'form2@hotmail.com');
+
 
 INSERT INTO 
     lessons(name) 
 VALUES
     ('Notes'),
     ('Rhythm');
+
 
 
 INSERT INTO 
@@ -23,10 +31,3 @@ VALUES
     (2, 'Types of Notes','Notes represent different durations of sounds.'),
 
     (2, 'Tempo','Tempo is how many beats per minute are being played, so how fast the song is.');
-
-
--- INSERT INTO 
---     trivia(id, name) 
--- VALUES
---     (),
---     ();
