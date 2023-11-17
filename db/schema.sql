@@ -38,3 +38,9 @@ CREATE TABLE topics (
 --   t_topic INT,
 --   FOREIGN KEY (t_topic) REFERENCES topics(to_id)
 -- );
+
+CREATE TABLE sequences (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(30),
+  sequence TEXT
+)
