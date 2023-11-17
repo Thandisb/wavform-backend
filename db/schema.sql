@@ -1,11 +1,23 @@
-DROP DATABASE IF EXISTS lessons;
+DROP DATABASE IF EXISTS wavform_dev;
 
-CREATE DATABASE lessons;
+CREATE DATABASE wavform_dev;
 
-\c lessons;
+\c wavform_dev;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username  VARCHAR(50) NOT NULL UNIQUE,
+    password  TEXT,
+    email  VARCHAR(50) NOT NULL UNIQUE
+);
+
+
+DROP TABLE IF EXISTS lessons;
 
 CREATE TABLE lessons (
-    l_id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     name VARCHAR(30)    
 );
 
@@ -16,7 +28,7 @@ CREATE TABLE topics (
   id SERIAL PRIMARY KEY,
   name VARCHAR(30),
   description TEXT,
-  lessons_id INTEGER REFERENCES lessons(l_id)
+  lessons_id INTEGER REFERENCES lessons(id)
 );
 
 -- CREATE TABLE trivia (
