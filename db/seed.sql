@@ -1,4 +1,11 @@
-\c lessons;
+\c wavform_dev;
+
+INSERT INTO 
+    users(username, password, email)
+VALUES
+    ('stormLord', 'password321', 'wave1@hotmail.com'),
+    ('boogieWOnderland', 'earthwindandfire', 'form2@hotmail.com');
+
 
 INSERT INTO 
     lessons(name) 
@@ -7,9 +14,11 @@ VALUES
     ('Rhythm');
 
 
+
 INSERT INTO 
     topics(lessons_id, name, description) 
 VALUES
+
     (1, 'Notes on the Piano and Octaves','◦ There are 8 notes in music, ABCDEFG.
     ◦ The notes on the piano are ABCDEFG.
     ◦ This sequence of notes repeats. Example: ABCDEFGABCDEFG
@@ -29,8 +38,3 @@ VALUES
     ◦ Tempo is very important to the feel of a song, and generally informs how a song should be played and constructed.');
 
 
--- INSERT INTO 
---     trivia(id, name) 
--- VALUES
---     (),
---     ();
