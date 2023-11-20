@@ -8,18 +8,19 @@ const aboutController = require("./controllers/aboutController");
 const lessonsController = require("./controllers/lessonsController");
 const topicsController = require("./controllers/topicsController");
 const UserRouter = require("./routers/userRouter")
+const sequencesController = require("./controllers/sequencesController");
 
 app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
- app.use("/lessons", lessonsController);
- app.use("/topics", topicsController);
- app.use("/about", aboutController);
 
+ 
+app.use("/about", aboutController);
 app.use("/lessons", lessonsController);
 app.use("/topics", topicsController);
 app.use("/users", UserRouter)
+app.use("/sequences", sequencesController)
 
 app.get("/", (req, res) => {
   res.send("Welcome to Wavform App");
