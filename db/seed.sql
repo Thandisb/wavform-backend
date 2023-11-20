@@ -30,3 +30,8 @@ VALUES
 -- VALUES
 --     (),
 --     ();
+
+INSERT INTO
+    sequences(name, sequence)
+VALUES
+    ('example', 'sequence')

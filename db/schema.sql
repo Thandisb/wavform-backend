@@ -27,6 +27,8 @@ CREATE TABLE topics (
 --   FOREIGN KEY (t_topic) REFERENCES topics(to_id)
 -- );
 
+DROP TABLE IF EXISTS sequences;
+
 CREATE TABLE sequences (
   id SERIAL PRIMARY KEY,
   name VARCHAR(30),

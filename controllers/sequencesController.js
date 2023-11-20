@@ -12,6 +12,8 @@ const {
 router.get("/", async (req, res) => {
   const sequences = await getAllSequences();
 
+  console.log(sequences)
+
   try {
     if (!Array.isArray(sequences)) {
       res.status(500).json({ error: "Server error!" });
@@ -37,9 +39,7 @@ router.get("/:id", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const sequenceData = {
-      ...req.body,
-    };
+    const sequenceData = req.body
 
     const sequence = await createSequence(sequenceData);
     res.json(sequence);
@@ -81,4 +81,4 @@ router.put("/:id", async (req, res) => {
 })
 
 
-modules.exports = router;
+module.exports = router;
