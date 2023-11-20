@@ -1,8 +1,20 @@
-DROP DATABASE IF EXISTS lessons;
+DROP DATABASE IF EXISTS wavform_dev;
 
-CREATE DATABASE lessons;
+CREATE DATABASE wavform_dev;
 
-\c lessons;
+\c wavform_dev;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username  VARCHAR(50) NOT NULL UNIQUE,
+    password  TEXT,
+    email  VARCHAR(50) NOT NULL UNIQUE
+);
+
+
+DROP TABLE IF EXISTS lessons;
 
 CREATE TABLE lessons (
     id SERIAL PRIMARY KEY,
