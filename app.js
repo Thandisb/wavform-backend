@@ -6,6 +6,7 @@ const app = express();
 
 const lessonsController = require("./controllers/lessonsController");
 const topicsController = require("./controllers/topicsController");
+const sequencesController = require("./controllers/sequencesController");
 const aboutController = require("./controllers/aboutController");
 const UserRouter = require("./routers/userRouter")
 
@@ -17,6 +18,7 @@ app.use(morgan("dev"));
 
 app.use("/lessons", lessonsController);
 app.use("/topics", topicsController);
+app.use("/sequences", sequencesController)
 app.use("/about", aboutController);
 app.use("/users", UserRouter)
 

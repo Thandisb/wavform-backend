@@ -38,3 +38,14 @@ VALUES
     ◦ Tempo is very important to the feel of a song, and generally informs how a song should be played and constructed.');
 
 
+-- INSERT INTO 
+--     trivia(id, name) 
+-- VALUES
+--     (),
+--     ();
+
+INSERT INTO
+    sequences(name, sequence)
+VALUES
+    ('example', 'sequence')
+
