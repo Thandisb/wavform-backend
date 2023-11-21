@@ -45,4 +45,16 @@ CREATE TABLE sequences (
   id SERIAL PRIMARY KEY,
   name VARCHAR(30),
   sequence TEXT
-)
+);  
+
+
+DROP TABLE IF EXISTS creators;
+
+CREATE TABLE creators (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    description TEXT,
+    picture TEXT, 
+    github TEXT,
+    linkin TEXT
+);
