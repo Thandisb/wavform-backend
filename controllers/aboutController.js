@@ -8,23 +8,22 @@ router.get("/", async (req, res) => {
 
   console.log(allPeople);
 
-     if (!Array.isArray(allPeople)){
-        res.status(500).json({error:"server error"});
-    } else {
-        res.json(allPeople);
-    }
- 
+  if (!Array.isArray(allPeople)) {
+    res.status(500).json({ error: "server error" });
+  } else {
+    res.json(allPeople);
+  }
 });
 
-router.get('/:id', async (req, res) => {
-    const {id} = req.params;
-    const person = await getSingleCreator();
-    if (person.length === 0 ){
-        res.status(404).json({error: "Not found"})
-    }else {
-        res.json(people[0]);
-    }
-});
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  const person = await getSingleCreator(id);
 
+  if (person.length === 0) {
+    res.status(404).json({ error: "Not found" });
+  } else {
+    res.json(person[0]);
+  }
+});
 
 module.exports = router;

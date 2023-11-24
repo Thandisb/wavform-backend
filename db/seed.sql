@@ -62,12 +62,12 @@ VALUES
 INSERT INTO
     sequences(name, sequence)
 VALUES
-    ('example', 'sequence')
+    ('example', 'sequence');
 
 
 
--- Insert data into the "creators" table
-INSERT INTO creators (name, description, picture, github, linkin)
+INSERT INTO 
+creators(name, description, picture, github, linkin)
 VALUES
 ('Jeremy Jimenez', 'About Jeremy', 'https://ca.slack-edge.com/TCVA3PF24-U04DJPRN7ED-65e5562978d0-512', 'https://github.com/jeremytjimenez', 'https://www.linkedin.com/in/jjimenez2016/'),
 ('Ambarimar Ulloa', 'About Ambarimar', 'https://ca.slack-edge.com/TCVA3PF24-U04DJPLM61F-b12925150cea-512', 'https://github.com/AmbarimarU', 'https://www.linkedin.com/in/ambarimar-ulloa/'),

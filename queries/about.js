@@ -9,13 +9,14 @@ const getAllCreators = async () => {
   }
 };
 
-const getSingleCreator = async () => {
+const getSingleCreator = async (id) => {
 
     try {
         const getSingle = await db.any('SELECT * FROM creators WHERE id = $1', id);
-        return getSingle;
+         return getSingle;
+        //console.log(getSingle)
     } catch (error) {
-        console.log(error, 'get single cfeator failed');
+        console.log(error, 'get single creator failed');
     }
 };
 
