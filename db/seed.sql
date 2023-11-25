@@ -18,10 +18,17 @@ VALUES
 INSERT INTO 
     topics(lessons_id, name, description) 
 VALUES
-    (1, 'Notes on the Piano and Octaves','◦ There are 8 notes in music, ABCDEFG.
-    ◦ The notes on the piano are ABCDEFG.
-    ◦ This sequence of notes repeats. Example: ABCDEFGABCDEFG
-    ◦ Every repetition is called an octave.'),
+
+    (1, 'Notes on the Piano and Octaves', '◦ There are 8 notes in music, ABCDEFG. 
+    ◦ The notes on the piano are ABCDEFG. 
+    ◦ This sequence of notes repeats. Example: ABCDEFGABCDEFG. 
+    ◦ Every repetition is called an octave. 
+    ◦ In addition, a half-step is the minimun distance between notes. 
+    ◦ A whole-step is composed of 2 half-steps.
+    ◦ There are also notes considered accidentals. 
+    ◦ Accidentals can be sharp (#) or flat (b).
+    ◦ When a note is sharp, it is raised by a half-step.
+    ◦ When a note is flat, it is lowered by a half-step.'),
 
     (1, 'Intervals and Chords','◦ The relationship between two notes is called an interval. 
     ◦ These intervals have various names and qualities: 
@@ -49,9 +56,8 @@ VALUES
     ◦ The most common types of notes are whole notes, half notes, quarter notes, eighth notes, and sixteenth notes.
     ◦ Each of these has a certain beat value, which quarter notes the majority of the time representing 1 beat.'),
 
-    (2, 'Tempo','◦ Tempo is how many beats per minute are being played, so how fast the song is.
+    (2, 'Tempo','◦ Tempo is how many beats per minute are being played, so how fast the song is. 
     ◦ Tempo is very important to the feel of a song, and generally informs how a song should be played and constructed.');
-
 
 -- INSERT INTO 
 --     trivia(id, name) 
