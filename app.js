@@ -3,8 +3,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 
 const app = express();
- const lessonsController = require("./controllers/lessonsController");
- const topicsController = require("./controllers/topicsController");
+ 
 const aboutController = require("./controllers/aboutController");
 const lessonsController = require("./controllers/lessonsController");
 const topicsController = require("./controllers/topicsController");
