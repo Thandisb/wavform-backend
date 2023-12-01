@@ -1,31 +1,66 @@
 {
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "morgan": "^1.10.0",
-    "pg-promise": "^11.5.4"
-  },
-  "scripts": {
-    "start": "nodemon server.js",
-    "dev": "nodemon server.js",
-    "db:init": "psql -U ambarimar -f db/schema.sql",
-    "db:seed": "psql -U ambarimar -f db/seed.sql"
-  },
-  "name": "wavform-backend",
-  "description": "<<<<<<< HEAD # wavform-backend ======= # Express Skeleton",
-  "version": "1.0.0",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Thandisb/wavform-backend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Thandisb/wavform-backend/issues"
-  },
-  "homepage": "https://github.com/Thandisb/wavform-backend#readme"
+    "dependencies": {
+
+        "bcryptjs": "^2.4.3",
+
+        "cors": "^2.8.5",
+
+        "dotenv": "^16.3.1",
+
+        "express": "^4.18.2",
+
+        "jsonwebtoken": "^9.0.2",
+
+        "jwt-decode": "^4.0.0",
+
+        "morgan": "^1.10.0",
+
+        "pg-promise": "^11.5.4"
+
+    },
+
+    "scripts": {
+
+        "start": "nodemon server.js",
+
+        "dev": "nodemon server.js",
+
+        "db:init": "psql -U postgres -f db/schema.sql",
+
+        "db:seed": "psql -U postgres -f db/seed.sql"
+
+    },
+
+    "name": "wavform-backend",
+
+    "description": "<<<<<<< HEAD # wavform-backend ======= # Express Skeleton",
+
+    "version": "1.0.0",
+
+    "main": "server.js",
+
+    "repository": {
+
+        "type": "git",
+
+        "url": "git+https://github.com/Thandisb/wavform-backend.git"
+
+    },
+
+    "keywords": [],
+
+    "author": "",
+
+    "license": "ISC",
+
+    "bugs": {
+
+        "url": "https://github.com/Thandisb/wavform-backend/issues"
+
+    },
+
+    "homepage": "https://github.com/Thandisb/wavform-backend#readme"
+
+
 }
 
