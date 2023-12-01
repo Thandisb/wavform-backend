@@ -1,5 +1,4 @@
 {
-
     "dependencies": {
 
         "bcryptjs": "^2.4.3",
@@ -61,6 +60,7 @@
     },
 
     "homepage": "https://github.com/Thandisb/wavform-backend#readme"
+
 
 }
 
