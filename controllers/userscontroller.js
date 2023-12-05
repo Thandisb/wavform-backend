@@ -16,9 +16,13 @@ const {getAllUsers, createUser, login} = require("../queries/user")
  const createUserFunc = async ( req, res, next) => {
     try {
             const createdUser = await createUser(req.body)
-            
-            if (createdUser.code =="23505"){
-                throw {message: "duplicated", error: parsedMessage(createdUser.detail), status: 409,}
+            if (createdUser.code == "23505"){
+                throw {
+                    message: "duplicated", 
+                    error: parsedMessage(createdUser.detail), 
+                    status: 409,
+                 };
+
             } else {
               res.json(createdUser)
             }
@@ -30,7 +34,7 @@ const {getAllUsers, createUser, login} = require("../queries/user")
 
  const loginFunc = async (req, res) => {
     try {
-          const foundUser = await login(req.body)  
+        const foundUser = await login(req.body)  
         if(foundUser.status === 500){
             throw foundUser
         }else{
