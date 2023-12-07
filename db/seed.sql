@@ -51,7 +51,7 @@ VALUES
          ∙ B -> C = half step
     ◦ Minor: WHWWHWW'),
 
-    (1, 'Piano Practice', 'Play this sequence in order:')
+    (1, 'Piano Practice', 'Play this sequence in order:'),
 
     (2, 'Bars and Types of Notes','◦ A bar is a way of understanding time in music. All music is played in terms of bars. 
     ◦ Each bar has a certain amount of beats. Usually, in most music, a bar has 4 beats, each being a quarter note. 
