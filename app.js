@@ -9,7 +9,7 @@ const topicsController = require("./controllers/topicsController");
 const sequencesController = require("./controllers/sequencesController");
 const aboutController = require("./controllers/aboutController");
 const UserRouter = require("./routers/userRouter");
-const keyController = require("./routers/keyController");
+const keyController = require("./controllers/keyController");
 
 app.use(cors());
 app.use(express.json());
