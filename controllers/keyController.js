@@ -3,7 +3,7 @@ const router = express.Router();
 const { postTrackKey, getTrackKeys } = require("../queries/keys");
 
 router.get("/", async (req, res) => {
-    const keys = await getTrackKeys(req.cookies.sessionID);
+    const keys = await getTrackKeys(user);
 
     try {
         if (keys.length === 0) {
