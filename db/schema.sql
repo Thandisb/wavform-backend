@@ -58,3 +58,10 @@ CREATE TABLE creators (
     github TEXT,
     linkin TEXT
 );
+
+CREATE TABLE key_tracker (
+    u_id INTEGER REFERENCES users(id) 
+    ON DELETE CASCADE,
+    key_press VARCHAR(2) NOT NULL,
+    time_logged TIMESTAMP NOT NULL
+);
