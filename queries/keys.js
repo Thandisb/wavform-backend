@@ -19,11 +19,21 @@ const getTrackKeys = async (user) => {
             `SELECT * FROM key_tracker WHERE u_id=$1`,
             [user]
         );
-
         return getKeys;
     } catch (error) {
         return error;
     }
 };
-
-module.exports = { postTrackKey, getTrackKeys };
+const eraseTrackKeys = async (info) => {
+    try {
+        const { user } = info;
+        const getKeys = await db.any(
+            `DELETE FROM key_tracker WHERE u_id=$1 RETURNING *`,
+            [user]
+        );
+        return getKeys;
+    } catch (error) {
+        return error;
+    }
+};
+module.exports = { postTrackKey, getTrackKeys, eraseTrackKeys };
