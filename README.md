@@ -64,6 +64,8 @@ npm run dev
 - [nodemon](https://nodemon.io/) - Development server
 - [cors](https://www.npmjs.com/package/cors) - Cross-origin resource sharing
 - [morgan](https://www.npmjs.com/package/morgan) - HTTP request logger
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) - A compact, URl-safe means of represnting claims to be transferred between two parties.
+- [jwt-decode](https://www.npmjs.com/package/jwt-decode) - A JavaScript library that is used to decode JSON Web Tokens.
 
 ### Additional Notes
 

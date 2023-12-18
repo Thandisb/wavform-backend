@@ -36,7 +36,7 @@ VALUES
         ∙ A major sixth.
         ∙ A perfect fifth. 
     ◦ At least three notes played simultaneously is called a chord. 
-    ◦ Chords also have qualities, major and minor the most common.'),
+    ◦ Chords also have <i>qualities</i>, major and minor the most common.'),
 
     (1, 'Scales', '◦ A scale is at its core a grouping of notes within an octave which sound "good" together. 
     ◦ All the white keys starting on C (CDEFGABC) make up the scale C Major. 
@@ -53,8 +53,8 @@ VALUES
 
     (1, 'Piano Practice', 'Play this sequence in order:'),
 
-    (2, 'Bars and Types of Notes','◦ A bar is a way of understanding time in music. All music is played in terms of bars. 
-    ◦ Each bar has a certain amount of beats. Usually, in most music, a bar has 4 beats, each being a quarter note. 
+    (2, 'Bars and Types of Notes','◦ A bar is a way of understanding time in music. All music is played in terms of bars.
+    ◦ Each bar has a certain amount of beats. Usually, in most music, a bar has 4 beats, each being a quarter note.
     ◦ The most common types of notes are whole notes, half notes, quarter notes, eighth notes, and sixteenth notes.
     ◦ Each of these has a certain beat value, which quarter notes the majority of the time representing 1 beat.'),
 
