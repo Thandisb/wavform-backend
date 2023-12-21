@@ -65,3 +65,10 @@ CREATE TABLE key_tracker (
     key_press VARCHAR(2) NOT NULL,
     time_logged TIMESTAMP NOT NULL
 );
+
+
+CREATE TABLE progress_tracker (
+  l_id INTEGER REFERENCES lessons(id),
+  u_id INTEGER REFERENCES users(id),
+  status TEXT CHECK (status IN ('In Progress', 'Not Started', 'Completed'))
+);
