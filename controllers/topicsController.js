@@ -35,15 +35,15 @@ router.get("/topic/:id", async (req, res) => {
   }
 });
 
-router.get("/:id", async (req, res) => {
-  const id = req.params.id;
-  const topic = await getSingleTopic(id);
+// router.get("/:id", async (req, res) => {
+//   const id = req.params.id;
+//   const topic = await getSingleTopic(id);
 
-  if (topic.length === 0) {
-    res.status(404).json({ error: "error!" });
-  } else {
-    res.json(topic[0]);
-  }
-});
+//   if (topic.length === 0) {
+//     res.status(404).json({ error: "error!" });
+//   } else {
+//     res.json(topic[0]);
+//   }
+// });
 
 module.exports = router;
