@@ -24,11 +24,25 @@ CREATE TABLE lessons (
 
 DROP TABLE IF EXISTS topics;
 
+-- CREATE TABLE topics (
+--   id SERIAL PRIMARY KEY,
+--   name VARCHAR(30),
+--   description TEXT,
+--   lessons_id INTEGER REFERENCES lessons(id)
+-- );
+
 CREATE TABLE topics (
   id SERIAL PRIMARY KEY,
   name VARCHAR(30),
-  description TEXT,
   lessons_id INTEGER REFERENCES lessons(id)
+);
+
+DROP TABLE IF EXISTS topics_details;
+
+CREATE TABLE topics_details (
+  id SERIAL PRIMARY KEY,
+  description TEXT,
+  topics_id INTEGER REFERENCES topics(id)
 );
 
 -- CREATE TABLE trivia (

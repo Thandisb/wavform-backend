@@ -11,6 +11,7 @@ const aboutController = require("./controllers/aboutController");
 const UserRouter = require("./routers/userRouter");
 const keyController = require("./controllers/keyController");
 const progressController = require("./controllers/progressController");
+const topicController = require("./controllers/topicController");
 
 app.use(cors());
 app.use(express.json());
@@ -23,6 +24,7 @@ app.use("/about", aboutController);
 app.use("/users", UserRouter);
 app.use("/keys", keyController);
 app.use("/progress", progressController);
+app.use("/topic", topicController);
 
 app.get("/", (req, res) => {
   res.send("Welcome to Wavform App");
