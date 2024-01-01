@@ -41,7 +41,9 @@ DROP TABLE IF EXISTS topics_details;
 
 CREATE TABLE topics_details (
   id SERIAL PRIMARY KEY,
+  name VARCHAR(50),
   description TEXT,
+  activity TEXT,
   topics_id INTEGER REFERENCES topics(id)
 );
 
