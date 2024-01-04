@@ -2,7 +2,7 @@ const db = require("../db/dbConfig");
 
 const getAllDetails = async () => {
   try {
-    const getTopicDetails = await db.any(`select * from topics_details`);
+    const getTopicDetails = await db.any(`SELECT * from topics_details`);
 
     return getTopicDetails;
   } catch (error) {
@@ -14,7 +14,7 @@ const getDetailsByTopicId = async (td_id) => {
   try {
     // use inner join 
     const getAllDetailsByTopicsId = await db.any(
-      `select * from topics_details inner join topics on topics.id = topics_details.topics_id where topics.id=$1`,
+      `SELECT * FROM topics_details INNER JOIN topics ON topics.id = topics_details.topics_id WHERE topics.id=$1`,
       td_id
     );
 
